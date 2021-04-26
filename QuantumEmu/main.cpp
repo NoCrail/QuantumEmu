@@ -11,6 +11,9 @@
 #include <string>
 #include "Config.h"
 #include <complex>
+#include <sstream>
+#include <vector>
+
 
 using namespace std;
 
@@ -19,28 +22,65 @@ string decToBin(int, int);
 void setUpData(Config);
 int binToDec(string);
 
+
 complex<double> arr[arraysize];
+int size = 0;
 //complex<double> arr2[9999999];
 int main(int argc, const char * argv[]) {
     Config config = readConfig();
     setUpData(config);
-    //cout << config.get_dataPath() << endl;
-//    cout << decToBin(54, 7) << endl;
-//    string st = decToBin(54, 7);
-//    cout << binToDec(st) << endl;
+
     return 0;
 }
 
+//Метод стоит переименовать в чтото связанное с Х
+void quantumMatrix(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд
+    int len = log2(size);
+    int x[2][2] = {{0,1},{1,0}};
+    
+    for(int i = 0; i<size; i++){
+        string ind = decToBin(i, len);
+        int vect[2]={1,0};
+        if(ind[first]=='1') {vect[0]=0; vect[1]=1;};
+        
+        int vH[2];
+        for(int j=0; j<2; j++){
+            vH[j]=x[j][0]*vect[0] + x[j][1]*vect[1];
+        }
+    }
+}
+
+vector<string> split(const string &s, char delim) {
+    vector<string> elems;
+    stringstream ss;
+    ss.str(s);
+    string item;
+    while (getline(ss, item, delim)) {
+        elems.push_back(item);
+    }
+    return elems;
+}
 void setUpData(Config config){
     string Text;
     ifstream input(config.get_dataPath()); // str path
-    int count = getline (input, Text);
-    while (getline (input, Text)) {
-        cout << Text << endl;
+    getline (input, Text);
+    size = stoi(Text);
+    for(int i = 0; i<size; i++){
+        getline (input, Text);
+        vector<string> elems = split(Text, ' ');
+        int ind = 0;
+        double real = 0;
+        double im = 0;
+        for(auto e: elems){
+            if(ind==0) real = stod(e); else im = stod(e);
+            ind++;
+            //cout << e << endl;
+        }
+        arr[i]=complex<double>(real, im);
+        //out << Text << endl;
     }
     input.close();
 }
-
 string decToBin(int x, int len){
     string result = "";
     for(int i=0; i<len; i++){
@@ -74,5 +114,6 @@ Config readConfig(){
     ConfigFile.close();
     return cfg;
 }
+
 
 

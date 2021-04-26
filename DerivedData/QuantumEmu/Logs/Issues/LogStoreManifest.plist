@@ -3,31 +3,36 @@
 <plist version="1.0">
 <dict>
 	<key>logFormatVersion</key>
-	<integer>9</integer>
+	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>E5788525-D23D-4399-8DAD-5144F16E55C1</key>
+		<key>FE2B639A-6B38-4928-854C-82752C0D43A0</key>
 		<dict>
 			<key>className</key>
-			<string>IDEActivityLogSection</string>
+			<string>IDEActivityLogMajorGroupSection</string>
 			<key>documentTypeString</key>
 			<string>&lt;nil&gt;</string>
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
 			<key>fileName</key>
-			<string>E5788525-D23D-4399-8DAD-5144F16E55C1.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
+			<string>FE2B639A-6B38-4928-854C-82752C0D43A0.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
 			<key>signature</key>
-			<string>QuantumEmu-edikpcargabkhrczwkpkvrbqjrah</string>
+			<string>QuantumEmu-fernpxxjqauigbfjkjsjrynazzeq</string>
 			<key>timeStartedRecording</key>
-			<real>640610561.24042201</real>
+			<real>641157563.67163897</real>
 			<key>timeStoppedRecording</key>
-			<real>640610572.86370301</real>
+			<real>641157568.83276498</real>
 			<key>title</key>
 			<string>Build target QuantumEmu</string>
 			<key>uniqueIdentifier</key>
-			<string>E5788525-D23D-4399-8DAD-5144F16E55C1</string>
+			<string>FE2B639A-6B38-4928-854C-82752C0D43A0</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

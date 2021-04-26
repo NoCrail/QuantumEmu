@@ -1,3 +1,2 @@
-dependencies: \
-  /Users/nocrail/Documents/XcodeProjects/QuantumEmu/QuantumEmu/QuantumEmu/main.cpp \
-  /Users/nocrail/Documents/XcodeProjects/QuantumEmu/QuantumEmu/QuantumEmu/Config.h
+dependencies: /Users/nocrail/GitHub/QuantumEmu/QuantumEmu/main.cpp \
+  /Users/nocrail/GitHub/QuantumEmu/QuantumEmu/Config.h
