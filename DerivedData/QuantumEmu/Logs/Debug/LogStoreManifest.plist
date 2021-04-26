@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>240091A0-0C33-41CC-875E-5825608547D9</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>240091A0-0C33-41CC-875E-5825608547D9.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640610390.02901804</real>
+			<key>timeStoppedRecording</key>
+			<real>640610392.50464296</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>240091A0-0C33-41CC-875E-5825608547D9</string>
+		</dict>
+		<key>29006ADC-27C0-4026-8BDE-C61A9ABE1A41</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>29006ADC-27C0-4026-8BDE-C61A9ABE1A41.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640537907.81237197</real>
+			<key>timeStoppedRecording</key>
+			<real>640537910.04820096</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>29006ADC-27C0-4026-8BDE-C61A9ABE1A41</string>
+		</dict>
+		<key>36F2EE56-684B-4583-9ED9-3B19241CCB29</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>36F2EE56-684B-4583-9ED9-3B19241CCB29.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640610206.23135495</real>
+			<key>timeStoppedRecording</key>
+			<real>640610208.25677395</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>36F2EE56-684B-4583-9ED9-3B19241CCB29</string>
+		</dict>
+		<key>3DAD2C1A-6DAD-4FC3-A4B9-0E002FF16FDB</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3DAD2C1A-6DAD-4FC3-A4B9-0E002FF16FDB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640610218.28335798</real>
+			<key>timeStoppedRecording</key>
+			<real>640610220.27915204</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>3DAD2C1A-6DAD-4FC3-A4B9-0E002FF16FDB</string>
+		</dict>
+		<key>4E69AA82-AF48-498B-956A-AB6332DF661F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>4E69AA82-AF48-498B-956A-AB6332DF661F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640537631.79547906</real>
+			<key>timeStoppedRecording</key>
+			<real>640537634.389624</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>4E69AA82-AF48-498B-956A-AB6332DF661F</string>
+		</dict>
+		<key>605BD8B5-0CEF-4375-96E8-803BCFDB498D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>605BD8B5-0CEF-4375-96E8-803BCFDB498D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640610356.45658195</real>
+			<key>timeStoppedRecording</key>
+			<real>640610358.54936302</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>605BD8B5-0CEF-4375-96E8-803BCFDB498D</string>
+		</dict>
+		<key>67334AE6-E848-44B8-8219-08879B18B786</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>67334AE6-E848-44B8-8219-08879B18B786.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640537860.77282405</real>
+			<key>timeStoppedRecording</key>
+			<real>640537862.92404997</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>67334AE6-E848-44B8-8219-08879B18B786</string>
+		</dict>
+		<key>7ACD6E8F-D3BE-473B-975D-AD999FD6F048</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7ACD6E8F-D3BE-473B-975D-AD999FD6F048.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640537890.435063</real>
+			<key>timeStoppedRecording</key>
+			<real>640537892.54545796</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>7ACD6E8F-D3BE-473B-975D-AD999FD6F048</string>
+		</dict>
+		<key>7D891FE3-5C33-4680-B35C-9FAB40ADDA5E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7D891FE3-5C33-4680-B35C-9FAB40ADDA5E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640610279.385988</real>
+			<key>timeStoppedRecording</key>
+			<real>640610281.51570296</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>7D891FE3-5C33-4680-B35C-9FAB40ADDA5E</string>
+		</dict>
+		<key>84000478-7C06-4DE4-BBF9-9721216DC9F2</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>84000478-7C06-4DE4-BBF9-9721216DC9F2.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640537806.16640496</real>
+			<key>timeStoppedRecording</key>
+			<real>640537808.24498701</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>84000478-7C06-4DE4-BBF9-9721216DC9F2</string>
+		</dict>
+		<key>937F93A2-BDF5-41CE-9ADF-38718DA49678</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>937F93A2-BDF5-41CE-9ADF-38718DA49678.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640537943.11220098</real>
+			<key>timeStoppedRecording</key>
+			<real>640537945.09276605</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>937F93A2-BDF5-41CE-9ADF-38718DA49678</string>
+		</dict>
+		<key>B084413A-DAF0-4AE1-B727-4004D62638AA</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B084413A-DAF0-4AE1-B727-4004D62638AA.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640537521.05365598</real>
+			<key>timeStoppedRecording</key>
+			<real>640537523.67105103</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>B084413A-DAF0-4AE1-B727-4004D62638AA</string>
+		</dict>
+		<key>B123C8E3-AFC5-4F9B-BC5A-EC38B59C51AD</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B123C8E3-AFC5-4F9B-BC5A-EC38B59C51AD.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640109384.64625204</real>
+			<key>timeStoppedRecording</key>
+			<real>640109398.88592196</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>B123C8E3-AFC5-4F9B-BC5A-EC38B59C51AD</string>
+		</dict>
+		<key>BFEBC81C-8225-46C8-9265-46E63225EB58</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>BFEBC81C-8225-46C8-9265-46E63225EB58.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640610572.87559295</real>
+			<key>timeStoppedRecording</key>
+			<real>640610574.87873304</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>BFEBC81C-8225-46C8-9265-46E63225EB58</string>
+		</dict>
+		<key>D1A37CFE-03B1-430B-A245-38F29F6A8301</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D1A37CFE-03B1-430B-A245-38F29F6A8301.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640610238.26338696</real>
+			<key>timeStoppedRecording</key>
+			<real>640610240.52898705</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>D1A37CFE-03B1-430B-A245-38F29F6A8301</string>
+		</dict>
+		<key>D6878E40-35B1-49AE-B847-E24357ACEDF0</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D6878E40-35B1-49AE-B847-E24357ACEDF0.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640610190.87597203</real>
+			<key>timeStoppedRecording</key>
+			<real>640610192.99229097</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>D6878E40-35B1-49AE-B847-E24357ACEDF0</string>
+		</dict>
+		<key>D9719AE1-F0EF-4015-B489-60C31E8A3313</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D9719AE1-F0EF-4015-B489-60C31E8A3313.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640537447.86614001</real>
+			<key>timeStoppedRecording</key>
+			<real>640537495.94248998</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>D9719AE1-F0EF-4015-B489-60C31E8A3313</string>
+		</dict>
+		<key>F17E2086-020C-4D76-AD9E-A1080BF1CD15</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F17E2086-020C-4D76-AD9E-A1080BF1CD15.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640537363.94711494</real>
+			<key>timeStoppedRecording</key>
+			<real>640537397.57839298</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>F17E2086-020C-4D76-AD9E-A1080BF1CD15</string>
+		</dict>
+		<key>F2048BEA-DAF8-4D05-8518-BA7FC8D5CB8E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F2048BEA-DAF8-4D05-8518-BA7FC8D5CB8E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>640537602.65015996</real>
+			<key>timeStoppedRecording</key>
+			<real>640537604.64411497</real>
+			<key>title</key>
+			<string>Debug QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>F2048BEA-DAF8-4D05-8518-BA7FC8D5CB8E</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
