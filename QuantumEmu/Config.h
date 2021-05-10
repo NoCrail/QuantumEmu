@@ -7,7 +7,7 @@
 //
 #include <iostream>
 
-#define arraysize 9999999 // 26 кубитов 9
+#define arraysize 99//9999999 // 26 кубитов 9
 
 using namespace std;
 class Config {

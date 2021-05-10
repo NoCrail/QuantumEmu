@@ -21,21 +21,144 @@ Config readConfig();
 string decToBin(int, int);
 void setUpData(Config);
 int binToDec(string);
-
+void quantumX(int);
+void quantumY(int);
+void quantumZ(int);
+void quantumH(int);
+char binReverse(char);
+void applyResult();
+void quantumWalsh();
+void quantumCNot(int,int);
 
 complex<double> arr[arraysize];
 int size = 0;
-//complex<double> arr2[9999999];
+complex<double> res[arraysize];
 int main(int argc, const char * argv[]) {
     Config config = readConfig();
     setUpData(config);
-
+    //cout << arr[0];
+    //quantumX(1); //X(2)
+    //quantumY(-1);
+    //quantumZ(0);
+    //quantumH(0);
+    //quantumWalsh();
+    quantumCNot(1, 2);
+    cout << res[0];
     return 0;
 }
 
-//Метод стоит переименовать в чтото связанное с Х
-void quantumMatrix(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд
+void quantumCNot(int first, int second){
+    first--; second--;
     int len = log2(size);
+    if(first<0) first = len-1;
+    for(int i = 0; i<size; i++){
+        string ind = decToBin(i, len);
+        if(ind[first]=='1') {
+            ind[second]=binReverse(ind[second]);
+        };
+        res[binToDec(ind)]=arr[i];
+    }
+}
+
+void quantumWalsh(){
+    int len = log2(size);
+    for(int i=0; i<len; i++){
+        quantumH(i);
+        applyResult();
+    }
+}
+
+void quantumH(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд проверял пока только для кубита 1 по питону
+    
+    int len = log2(size);
+    if(first<0) first = len-1;
+    double h[2][2] = {{1/sqrt(2),1/sqrt(2)},{1/sqrt(2),-1/sqrt(2)}};
+    
+    for(int i = 0; i<size; i++){
+        string ind = decToBin(i, len);
+        int vect[2]={1,0};
+        if(ind[first]=='1') {vect[0]=0; vect[1]=1;};
+        
+        double vH[2];
+        for(int j=0; j<2; j++){
+            vH[j]=h[j][0]*vect[0] + h[j][1]*vect[1];
+        }
+        
+        if(ind[first]=='1'){
+            double temp = vH[1];
+            vH[1]=vH[0];
+            vH[0]=temp;
+        }
+        
+        res[i]=0;
+        res[i]+=complex<double>(vH[0],0)*arr[i];
+        ind[first]=binReverse(ind[first]);
+        res[i]+=complex<double>(vH[1],0)*arr[binToDec(ind)];
+    }
+}
+
+void quantumZ(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд проверял пока только для кубита 1 по питону
+    
+    int len = log2(size);
+    if(first<0) first = len-1;
+    int z[2][2] = {{1,0},{0,-1}};
+    
+    for(int i = 0; i<size; i++){
+        string ind = decToBin(i, len);
+        int vect[2]={1,0};
+        if(ind[first]=='1') {vect[0]=0; vect[1]=1;};
+        
+        int vH[2];
+        for(int j=0; j<2; j++){
+            vH[j]=z[j][0]*vect[0] + z[j][1]*vect[1];
+        }
+        
+        if(ind[first]=='1'){
+            int temp = vH[1];
+            vH[1]=vH[0];
+            vH[0]=temp;
+        }
+        
+        res[i]=0;
+        res[i]+=complex<double>(vH[0],0)*arr[i];
+        ind[first]=binReverse(ind[first]);
+        res[i]+=complex<double>(vH[1],0)*arr[binToDec(ind)];
+    }
+}
+
+void quantumY(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд проверял пока только для кубита 1 по питону
+    
+    int len = log2(size);
+    if(first<0) first = len-1;
+    complex<double> y[2][2] = {{complex<double>(0,0),complex<double>(0,-1)},{complex<double>(0,1),complex<double>(0,0)}};
+    
+    for(int i = 0; i<size; i++){
+        string ind = decToBin(i, len);
+        int vect[2]={1,0};
+        if(ind[first]=='1') {vect[0]=0; vect[1]=1;};
+        
+        complex<double> vH[2];
+        for(int j=0; j<2; j++){
+            vH[j]=y[j][0]*complex<double>(vect[0],0) + y[j][1]*complex<double>(vect[1],0);
+        }
+        
+        if(ind[first]=='1'){
+            complex<double> temp = vH[1];
+            vH[1]=vH[0];
+            vH[0]=temp;
+        }
+        
+        res[i]=0;
+        res[i]+=vH[0]*arr[i];
+        ind[first]=binReverse(ind[first]);
+        res[i]+=vH[1]*arr[binToDec(ind)];
+    }
+}
+
+void quantumX(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд проверял пока только для кубита 1 по питону
+    
+    int len = log2(size);
+    if(first<0) first = len-1;
     int x[2][2] = {{0,1},{1,0}};
     
     for(int i = 0; i<size; i++){
@@ -47,7 +170,22 @@ void quantumMatrix(int first){ //какаято муть с first для 0 ку�
         for(int j=0; j<2; j++){
             vH[j]=x[j][0]*vect[0] + x[j][1]*vect[1];
         }
+        
+        if(ind[first]=='1'){
+            int temp = vH[1];
+            vH[1]=vH[0];
+            vH[0]=temp;
+        }
+        
+        res[i]=0;
+        res[i]+=complex<double>(vH[0],0)*arr[i];
+        ind[first]=binReverse(ind[first]);
+        res[i]+=complex<double>(vH[1],0)*arr[binToDec(ind)];
     }
+}
+
+void applyResult(){
+    copy(begin(res), end(res), begin(arr));
 }
 
 vector<string> split(const string &s, char delim) {
@@ -94,7 +232,7 @@ int binToDec(string b){
     int res = 0;
     int len = b.length()-1;
     for(int i = len; i>=0; i--){
-        cout << ((int)b[i]-'0')*pow << endl;
+        //cout << ((int)b[i]-'0')*pow << endl;
         res += ((int)b[i]-'0')*pow;
         pow *=2;
     }
@@ -113,6 +251,9 @@ Config readConfig(){
     }
     ConfigFile.close();
     return cfg;
+}
+char binReverse(char x){
+    if(x=='1') return '0'; else return '1';
 }
 
 
