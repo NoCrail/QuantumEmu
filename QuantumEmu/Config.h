@@ -16,7 +16,7 @@ public:
         return dataPath;
     }
     string get_instructionsPath(){
-        return dataPath;
+        return instructionsPath;
     }
     void set_dataPath(string path){
         dataPath=path;

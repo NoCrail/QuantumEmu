@@ -29,26 +29,36 @@ char binReverse(char);
 void applyResult();
 void quantumWalsh();
 void quantumCNot(int,int);
+void doInstructions(Config);
 
 complex<double> arr[arraysize];
 int size = 0;
 complex<double> res[arraysize];
+
 int main(int argc, const char * argv[]) {
     Config config = readConfig();
     setUpData(config);
+    bool debug = false;
     //cout << arr[0];
     //quantumX(1); //X(2)
     //quantumY(-1);
     //quantumZ(0);
     //quantumH(0);
     //quantumWalsh();
-    quantumCNot(1, 2);
+    //quantumCNot(1, 2);
+   
+    cout << size;
+    if(!debug){
+        doInstructions(config);
+    }
     cout << res[0];
     return 0;
+    
+    
 }
 
-void quantumCNot(int first, int second){
-    first--; second--;
+void quantumCNot(int first, int second){ //управляемЫЙ управляЮЩИЙ
+    //first--; second--;
     int len = log2(size);
     if(first<0) first = len-1;
     for(int i = 0; i<size; i++){
@@ -69,6 +79,8 @@ void quantumWalsh(){
 }
 
 void quantumH(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд проверял пока только для кубита 1 по питону
+    
+    first--; //!!!!!!!! TODO TODO
     
     int len = log2(size);
     if(first<0) first = len-1;
@@ -99,6 +111,8 @@ void quantumH(int first){ //какаято муть с first для 0 кубит
 
 void quantumZ(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд проверял пока только для кубита 1 по питону
     
+    first--; //!!!!!!!! TODO TODO
+    
     int len = log2(size);
     if(first<0) first = len-1;
     int z[2][2] = {{1,0},{0,-1}};
@@ -128,6 +142,8 @@ void quantumZ(int first){ //какаято муть с first для 0 кубит
 
 void quantumY(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд проверял пока только для кубита 1 по питону
     
+    first--; //!!!!!!!! TODO TODO
+    
     int len = log2(size);
     if(first<0) first = len-1;
     complex<double> y[2][2] = {{complex<double>(0,0),complex<double>(0,-1)},{complex<double>(0,1),complex<double>(0,0)}};
@@ -156,6 +172,8 @@ void quantumY(int first){ //какаято муть с first для 0 кубит
 }
 
 void quantumX(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд проверял пока только для кубита 1 по питону
+    
+    first--; //!!!!!!!! TODO TODO
     
     int len = log2(size);
     if(first<0) first = len-1;
@@ -219,6 +237,7 @@ void setUpData(Config config){
     }
     input.close();
 }
+
 string decToBin(int x, int len){
     string result = "";
     for(int i=0; i<len; i++){
@@ -256,5 +275,34 @@ char binReverse(char x){
     if(x=='1') return '0'; else return '1';
 }
 
-
+void doInstructions(Config config){
+    string Text;
+    ifstream input(config.get_instructionsPath()); // str path
+    getline (input, Text);
+    int size = stoi(Text);
+    for(int i = 0; i<size; i++){
+        getline (input, Text);
+        vector<string> elems = split(Text, ' ');
+        int ind = 0;
+        string instruction = "";
+        int arg1 = -10;
+        int arg2 = -10;
+        for(auto e: elems){
+            if(ind==0) instruction = e;
+            if(ind==1) arg1 = stoi(e);
+            if(ind==2) arg2 = stoi(e);
+            ind++;
+        }
+        if (instruction=="X") quantumX(arg1);
+        if (instruction=="Y") quantumY(arg1);
+        if (instruction=="Z") quantumZ(arg1);
+        if (instruction=="H") quantumH(arg1);
+        if (instruction=="WH") quantumWalsh();
+        if (instruction=="CN") quantumCNot(arg1, arg2);
+        applyResult();
+        
+        //out << Text << endl;
+    }
+    input.close();
+}
 
