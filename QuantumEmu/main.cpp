@@ -30,19 +30,20 @@ void applyResult();
 void quantumWalsh();
 void quantumCNot(int,int);
 void doInstructions(Config);
+void createResultFile(Config);
 
-complex<double> arr[arraysize];
-
-//int *pint = new int(1797783552);
-
+//complex<double> arr[arraysize];
 
 int size = 0;
+complex<double> *arr; // = new complex<double>(size);
+//complex<double> *res; // = new complex<double>(size);
+
 complex<double> res[arraysize];
 
 int main(int argc, const char * argv[]) {
     Config config = readConfig();
     setUpData(config);
-    bool debug = true;
+    bool debug = false;
     //cout << arr[0];
     //quantumX(1); //X(2)
     //quantumY(-1);
@@ -55,7 +56,7 @@ int main(int argc, const char * argv[]) {
     //cout << bitset<10>(32);
     //cout << dec;
     //cout << size;
-
+    //ofstream output(config.get_dataPath()+"-output");
     if(!debug){
         doInstructions(config);
     }
@@ -210,8 +211,11 @@ void quantumX(int first){ //какаято муть с first для 0 кубит
     }
 }
 
-void applyResult(){
-    copy(begin(res), end(res), begin(arr));
+void applyResult(){ //почему в с++ нету добанного clone или copy или любой другуй фигни чтобы не было указателей я хз
+    //copy(begin(res), end(res), begin(arr));
+    for(int i = 0; i<size; i++){
+        arr[i]=res[i]+complex<double>(0,0);
+    }
 }
 
 vector<string> split(const string &s, char delim) {
@@ -229,6 +233,8 @@ void setUpData(Config config){
     ifstream input(config.get_dataPath()); // str path
     getline (input, Text);
     size = stoi(Text);
+    //res = new complex<double> (size);
+    arr = new complex<double> [size];
     for(int i = 0; i<size; i++){
         getline (input, Text);
         vector<string> elems = split(Text, ' ');
@@ -283,6 +289,14 @@ char binReverse(char x){
     if(x=='1') return '0'; else return '1';
 }
 
+void createResultFile(Config config){
+    ofstream output(config.get_dataPath()+"-output");
+    for(int i=0;i<size; i++){
+        output << arr[i].real() << "+" << arr[i].imag() << "i" << endl;
+    }
+    output.close();
+}
+
 void doInstructions(Config config){
     string Text;
     ifstream input(config.get_instructionsPath()); // str path
@@ -311,6 +325,14 @@ void doInstructions(Config config){
         
         //out << Text << endl;
     }
+    createResultFile(config);
+//    delete res;
+//    delete arr;
+//    res = nullptr;
+//    arr = nullptr;
+//
     input.close();
 }
+
+
 
