@@ -32,13 +32,17 @@ void quantumCNot(int,int);
 void doInstructions(Config);
 
 complex<double> arr[arraysize];
+
+//int *pint = new int(1797783552);
+
+
 int size = 0;
 complex<double> res[arraysize];
 
 int main(int argc, const char * argv[]) {
     Config config = readConfig();
     setUpData(config);
-    bool debug = false;
+    bool debug = true;
     //cout << arr[0];
     //quantumX(1); //X(2)
     //quantumY(-1);
@@ -46,8 +50,12 @@ int main(int argc, const char * argv[]) {
     //quantumH(0);
     //quantumWalsh();
     //quantumCNot(1, 2);
-   
-    cout << size;
+    //std::string bin("1024");
+    //int dec = std::stoi(bin, nullptr, 10); // dec = 13
+    //cout << bitset<10>(32);
+    //cout << dec;
+    //cout << size;
+
     if(!debug){
         doInstructions(config);
     }
@@ -233,12 +241,11 @@ void setUpData(Config config){
             //cout << e << endl;
         }
         arr[i]=complex<double>(real, im);
-        //out << Text << endl;
     }
     input.close();
 }
 
-string decToBin(int x, int len){
+string decToBin(int x, int len){ //bitset требует константу в аргумент
     string result = "";
     for(int i=0; i<len; i++){
         result = to_string(x % 2) + result;
@@ -246,8 +253,8 @@ string decToBin(int x, int len){
     }
     return result;
 }
-int binToDec(string b){
-    int pow = 1;
+int binToDec(string b){ //эффективнее найти
+    /*int pow = 1;
     int res = 0;
     int len = b.length()-1;
     for(int i = len; i>=0; i--){
@@ -255,7 +262,8 @@ int binToDec(string b){
         res += ((int)b[i]-'0')*pow;
         pow *=2;
     }
-    return res;
+    return res;*/
+    return stoi(b, nullptr, 2);
 }
 Config readConfig(){
     string Text;
