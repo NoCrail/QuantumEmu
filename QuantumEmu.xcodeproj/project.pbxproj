@@ -26,6 +26,7 @@
 /* Begin PBXFileReference section */
 		9E332BA0261F238F005936A7 /* testData */ = {isa = PBXFileReference; lastKnownFileType = text; path = testData; sourceTree = "<group>"; };
 		9E332BA1261F32BE005936A7 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		9E5DD60F264BFC6400A258D6 /* testData-output */ = {isa = PBXFileReference; lastKnownFileType = text; path = "testData-output"; sourceTree = "<group>"; };
 		9ECB36EB2649BF0D00236A5F /* instructions */ = {isa = PBXFileReference; lastKnownFileType = text; path = instructions; sourceTree = "<group>"; };
 		9EF5E872261C9CED008406AD /* QuantumEmu */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = QuantumEmu; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF5E875261C9CED008406AD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		9EF5E874261C9CED008406AD /* QuantumEmu */ = {
 			isa = PBXGroup;
 			children = (
+				9E5DD60F264BFC6400A258D6 /* testData-output */,
 				9EF5E875261C9CED008406AD /* main.cpp */,
 				9E332BA0261F238F005936A7 /* testData */,
 				9E332BA1261F32BE005936A7 /* Config.h */,

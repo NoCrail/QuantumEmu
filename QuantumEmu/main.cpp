@@ -36,9 +36,9 @@ void createResultFile(Config);
 
 int size = 0;
 complex<double> *arr; // = new complex<double>(size);
-//complex<double> *res; // = new complex<double>(size);
+complex<double> *res; // = new complex<double>(size);
 
-complex<double> res[arraysize];
+//complex<double> res[arraysize];
 
 int main(int argc, const char * argv[]) {
     Config config = readConfig();
@@ -66,17 +66,21 @@ int main(int argc, const char * argv[]) {
     
 }
 
-void quantumCNot(int first, int second){ //управляемЫЙ управляЮЩИЙ
-    //first--; second--;
+void quantumCNot(int first, int second){ //управляЮЩИЙ управляЕМЫЙ
+    first--;
+    second--;
     int len = log2(size);
     if(first<0) first = len-1;
+    if(second<0) second = len-1;
     for(int i = 0; i<size; i++){
         string ind = decToBin(i, len);
         if(ind[first]=='1') {
             ind[second]=binReverse(ind[second]);
         };
+        //int test =binToDec(ind);
         res[binToDec(ind)]=arr[i];
     }
+    cout << res[6];
 }
 
 void quantumWalsh(){
@@ -211,11 +215,13 @@ void quantumX(int first){ //какаято муть с first для 0 кубит
     }
 }
 
-void applyResult(){ //почему в с++ нету добанного clone или copy или любой другуй фигни чтобы не было указателей я хз
-    //copy(begin(res), end(res), begin(arr));
+void applyResult(){
     for(int i = 0; i<size; i++){
         arr[i]=res[i]+complex<double>(0,0);
     }
+    delete res;
+    res = new complex<double> [size];
+    
 }
 
 vector<string> split(const string &s, char delim) {
@@ -233,7 +239,7 @@ void setUpData(Config config){
     ifstream input(config.get_dataPath()); // str path
     getline (input, Text);
     size = stoi(Text);
-    //res = new complex<double> (size);
+    res = new complex<double> [size];
     arr = new complex<double> [size];
     for(int i = 0; i<size; i++){
         getline (input, Text);
@@ -258,7 +264,7 @@ string decToBin(int x, int len){ //bitset требует константу в �
         x /= 2;
     }
     return result;
-}
+} 
 int binToDec(string b){ //эффективнее найти
     /*int pow = 1;
     int res = 0;
@@ -292,7 +298,9 @@ char binReverse(char x){
 void createResultFile(Config config){
     ofstream output(config.get_dataPath()+"-output");
     for(int i=0;i<size; i++){
-        output << arr[i].real() << "+" << arr[i].imag() << "i" << endl;
+        if(arr[i].imag()<0){
+            output << arr[i].real()  << arr[i].imag() << "i" << endl;
+        } else output << arr[i].real() << "+" << arr[i].imag() << "i" << endl;
     }
     output.close();
 }
@@ -315,6 +323,7 @@ void doInstructions(Config config){
             if(ind==2) arg2 = stoi(e);
             ind++;
         }
+        //отсутсвие switch для string - маразм
         if (instruction=="X") quantumX(arg1);
         if (instruction=="Y") quantumY(arg1);
         if (instruction=="Z") quantumZ(arg1);
@@ -326,11 +335,9 @@ void doInstructions(Config config){
         //out << Text << endl;
     }
     createResultFile(config);
-//    delete res;
-//    delete arr;
-//    res = nullptr;
-//    arr = nullptr;
-//
+    delete arr;
+
+
     input.close();
 }
 
