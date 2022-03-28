@@ -15,11 +15,15 @@ int main (int argc, char **argv)
     double pow2 = pow(2.0f, n*1.0f);
     complex<double> zi = complex<double>(0, 1);
     complex<double> wn = exp(2*M_PI*zi/pow2);
+    complex<double> wa[N*(N-1)];
     complex<double>	a[N][N];
+    for(int i=0; i<=(N-1)*(N-1); i++) wa[i]=pow(wn, i);
     for(int i = 0; i<N; i++){
         for(int k = 0; k<N; k++)
-            a[k][i]=pow(wn, k*i);
+            a[k][i]=wa[k*i];
+
     }
+
 
     printf("******************************************************\n");
       printf("Matrix:\n");

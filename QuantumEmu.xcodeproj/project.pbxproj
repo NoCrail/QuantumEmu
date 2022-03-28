@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E0113CC27EB30D1009CC928 /* matrixMultiply.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0113CB27EB30D1009CC928 /* matrixMultiply.cpp */; };
 		9E332BA3261F32BE005936A7 /* Config.h in Sources */ = {isa = PBXBuildFile; fileRef = 9E332BA1261F32BE005936A7 /* Config.h */; };
 		9EF5E876261C9CED008406AD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EF5E875261C9CED008406AD /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9E0113CB27EB30D1009CC928 /* matrixMultiply.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = matrixMultiply.cpp; sourceTree = "<group>"; };
 		9E332BA0261F238F005936A7 /* testData */ = {isa = PBXFileReference; lastKnownFileType = text; path = testData; sourceTree = "<group>"; };
 		9E332BA1261F32BE005936A7 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		9E5DD60F264BFC6400A258D6 /* testData-output */ = {isa = PBXFileReference; lastKnownFileType = text; path = "testData-output"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				9E332BA0261F238F005936A7 /* testData */,
 				9E332BA1261F32BE005936A7 /* Config.h */,
 				9ECB36EB2649BF0D00236A5F /* instructions */,
+				9E0113CB27EB30D1009CC928 /* matrixMultiply.cpp */,
 			);
 			path = QuantumEmu;
 			sourceTree = "<group>";
@@ -97,7 +100,7 @@
 		9EF5E86A261C9CED008406AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Vladislav Dunaev";
 				TargetAttributes = {
 					9EF5E871261C9CED008406AD = {
@@ -111,6 +114,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 9EF5E869261C9CED008406AD;
 			productRefGroup = 9EF5E873261C9CED008406AD /* Products */;
@@ -127,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E0113CC27EB30D1009CC928 /* matrixMultiply.cpp in Sources */,
 				9EF5E876261C9CED008406AD /* main.cpp in Sources */,
 				9E332BA3261F32BE005936A7 /* Config.h in Sources */,
 			);
@@ -139,6 +144,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_HEADERS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -186,6 +192,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/open-mpi/4.1.2/include";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -198,6 +205,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_HEADERS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -239,6 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/open-mpi/4.1.2/include";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -250,6 +259,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/open-mpi/4.1.2/lib";
+				OTHER_LDFLAGS = "-lmpi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -258,6 +269,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/open-mpi/4.1.2/lib";
+				OTHER_LDFLAGS = "-lmpi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
