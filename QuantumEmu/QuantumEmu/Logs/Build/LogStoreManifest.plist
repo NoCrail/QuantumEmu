@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>364C01F2-0BC9-4871-8229-7A9FC95AF6E1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>364C01F2-0BC9-4871-8229-7A9FC95AF6E1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>669726144.35176098</real>
+			<key>timeStoppedRecording</key>
+			<real>669726145.73285198</real>
+			<key>title</key>
+			<string>Build QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>364C01F2-0BC9-4871-8229-7A9FC95AF6E1</string>
+		</dict>
+		<key>40C24428-4729-4FF2-A681-4EC97EC5541E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>40C24428-4729-4FF2-A681-4EC97EC5541E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>669726635.51291597</real>
+			<key>timeStoppedRecording</key>
+			<real>669726635.54028296</real>
+			<key>title</key>
+			<string>Build QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>40C24428-4729-4FF2-A681-4EC97EC5541E</string>
+		</dict>
+		<key>60CA4FC8-C635-43F9-AC90-B2A5897D3E85</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>60CA4FC8-C635-43F9-AC90-B2A5897D3E85.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>669726511.30190206</real>
+			<key>timeStoppedRecording</key>
+			<real>669726511.40762997</real>
+			<key>title</key>
+			<string>Build QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>60CA4FC8-C635-43F9-AC90-B2A5897D3E85</string>
+		</dict>
+		<key>7A9E5C96-2124-4CEF-8675-DFDDD2161460</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7A9E5C96-2124-4CEF-8675-DFDDD2161460.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>669726588.73744905</real>
+			<key>timeStoppedRecording</key>
+			<real>669726589.54817295</real>
+			<key>title</key>
+			<string>Build QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>7A9E5C96-2124-4CEF-8675-DFDDD2161460</string>
+		</dict>
+		<key>C24875DC-CFAC-4741-B7CB-F5FD301D7332</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C24875DC-CFAC-4741-B7CB-F5FD301D7332.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>669726774.64769304</real>
+			<key>timeStoppedRecording</key>
+			<real>669726774.68292296</real>
+			<key>title</key>
+			<string>Build QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>C24875DC-CFAC-4741-B7CB-F5FD301D7332</string>
+		</dict>
+		<key>EE5E28E4-332E-4154-96FA-CC7D3F6B065B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EE5E28E4-332E-4154-96FA-CC7D3F6B065B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>669726867.119591</real>
+			<key>timeStoppedRecording</key>
+			<real>669726867.88095701</real>
+			<key>title</key>
+			<string>Build QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>EE5E28E4-332E-4154-96FA-CC7D3F6B065B</string>
+		</dict>
+		<key>EFB29FEE-AA72-4E23-9DB0-C2592C118044</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EFB29FEE-AA72-4E23-9DB0-C2592C118044.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build QuantumEmu</string>
+			<key>timeStartedRecording</key>
+			<real>669726556.81331301</real>
+			<key>timeStoppedRecording</key>
+			<real>669726556.959108</real>
+			<key>title</key>
+			<string>Build QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>EFB29FEE-AA72-4E23-9DB0-C2592C118044</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

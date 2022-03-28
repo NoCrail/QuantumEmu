@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>3DB4FF37-9076-4983-A0F2-A966AEF575CD</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3DB4FF37-9076-4983-A0F2-A966AEF575CD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orterun</string>
+			<key>timeStartedRecording</key>
+			<real>669726867.88263702</real>
+			<key>timeStoppedRecording</key>
+			<real>669726873.11685205</real>
+			<key>title</key>
+			<string>Run orterun</string>
+			<key>uniqueIdentifier</key>
+			<string>3DB4FF37-9076-4983-A0F2-A966AEF575CD</string>
+		</dict>
+		<key>750AAE2C-B42F-4B4D-A88F-ADBFA09C66DD</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>750AAE2C-B42F-4B4D-A88F-ADBFA09C66DD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orterun</string>
+			<key>timeStartedRecording</key>
+			<real>669726589.56326306</real>
+			<key>timeStoppedRecording</key>
+			<real>669726604.57405198</real>
+			<key>title</key>
+			<string>Run orterun</string>
+			<key>uniqueIdentifier</key>
+			<string>750AAE2C-B42F-4B4D-A88F-ADBFA09C66DD</string>
+		</dict>
+		<key>87830BC0-0BBF-4F0D-86D6-E8F9CA9034C9</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>87830BC0-0BBF-4F0D-86D6-E8F9CA9034C9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orterun</string>
+			<key>timeStartedRecording</key>
+			<real>669726774.68469405</real>
+			<key>timeStoppedRecording</key>
+			<real>669726779.92796195</real>
+			<key>title</key>
+			<string>Run orterun</string>
+			<key>uniqueIdentifier</key>
+			<string>87830BC0-0BBF-4F0D-86D6-E8F9CA9034C9</string>
+		</dict>
+		<key>D512F084-E651-4057-8E8D-46186C1A0C53</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D512F084-E651-4057-8E8D-46186C1A0C53.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>QuantumEmu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>QuantumEmu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run orterun</string>
+			<key>timeStartedRecording</key>
+			<real>669726635.54220104</real>
+			<key>timeStoppedRecording</key>
+			<real>669726638.71042597</real>
+			<key>title</key>
+			<string>Run orterun</string>
+			<key>uniqueIdentifier</key>
+			<string>D512F084-E651-4057-8E8D-46186C1A0C53</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

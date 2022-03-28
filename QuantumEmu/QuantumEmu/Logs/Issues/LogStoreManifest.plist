@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>D24D8C5F-DBF0-4A88-82D1-86B1EE3A6853</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
+			<key>fileName</key>
+			<string>D24D8C5F-DBF0-4A88-82D1-86B1EE3A6853.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>QuantumEmu-fernpxxjqauigbfjkjsjrynazzeq</string>
+			<key>timeStartedRecording</key>
+			<real>669726867.15318203</real>
+			<key>timeStoppedRecording</key>
+			<real>669726867.86294198</real>
+			<key>title</key>
+			<string>Build target QuantumEmu</string>
+			<key>uniqueIdentifier</key>
+			<string>D24D8C5F-DBF0-4A88-82D1-86B1EE3A6853</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>

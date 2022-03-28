@@ -11,7 +11,8 @@
 #include <string>
 #include "Config.h"
 #include <complex>
-#include <sstream>
+#include <mpi.h>
+//#include <sstream>
 #include <vector>
 
 
@@ -25,45 +26,35 @@ void quantumX(int);
 void quantumY(int);
 void quantumZ(int);
 void quantumH(int);
+void quantumS(int);
 char binReverse(char);
 void applyResult();
 void quantumWalsh();
 void quantumCNot(int,int);
 void doInstructions(Config);
 void createResultFile(Config);
+void quantumCP(int , int);
 
 //complex<double> arr[arraysize];
 
 int size = 0;
-complex<double> *arr; // = new complex<double>(size);
-complex<double> *res; // = new complex<double>(size);
-
-//complex<double> res[arraysize];
+complex<double> *arr;
+complex<double> *res;
 
 int main(int argc, const char * argv[]) {
+    //cout << "work";
     Config config = readConfig();
     setUpData(config);
-    bool debug = false;
-    //cout << arr[0];
-    //quantumX(1); //X(2)
-    //quantumY(-1);
-    //quantumZ(0);
-    //quantumH(0);
-    //quantumWalsh();
-    //quantumCNot(1, 2);
-    //std::string bin("1024");
-    //int dec = std::stoi(bin, nullptr, 10); // dec = 13
-    //cout << bitset<10>(32);
-    //cout << dec;
-    //cout << size;
-    //ofstream output(config.get_dataPath()+"-output");
+    bool debug = true;
     if(!debug){
         doInstructions(config);
     }
-    cout << res[0];
+    //quantumCNot(0, 1);
+    quantumS(2);
+    //createResultFile(config);
+    applyResult();
+    createResultFile(config);
     return 0;
-    
-    
 }
 
 void quantumCNot(int first, int second){ //управляЮЩИЙ управляЕМЫЙ
@@ -76,11 +67,27 @@ void quantumCNot(int first, int second){ //управляЮЩИЙ управля
         string ind = decToBin(i, len);
         if(ind[first]=='1') {
             ind[second]=binReverse(ind[second]);
+            cout << binToDec(ind);
         };
-        //int test =binToDec(ind);
+        
         res[binToDec(ind)]=arr[i];
     }
-    cout << res[6];
+}
+
+void quantumCP(int first, int second){ //управляЮЩИЙ управляЕМЫЙ //TEST
+    first--;
+    second--;
+    int len = log2(size);
+    if(first<0) first = len-1;
+    if(second<0) second = len-1;
+    for(int i = 0; i<size; i++){
+        string ind = decToBin(i, len);
+        if(ind[first]=='1') {
+            ind[second]=binReverse(ind[second]);
+        };
+        cout << binToDec(ind);
+        res[binToDec(ind)]=arr[i];
+    }
 }
 
 void quantumWalsh(){
@@ -91,10 +98,22 @@ void quantumWalsh(){
     }
 }
 
-void quantumH(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд проверял пока только для кубита 1 по питону
-    
-    first--; //!!!!!!!! TODO TODO
-    
+void quantumS(int phase){
+    int first = 2;
+    int len = log2(size);
+    for(int i = 0; i<size; i++){
+        string ind = decToBin(i, len);
+        if(ind[first]=='1') {
+            double ph = 1.0*phase;
+            complex<double> add = exp(complex<double>(0,ph));
+            //cout << arr[i];
+            res[i]= add*arr[i];
+        } else res[i]= arr[i];
+    }
+}
+
+void quantumH(int first){
+    first--;
     int len = log2(size);
     if(first<0) first = len-1;
     double h[2][2] = {{1/sqrt(2),1/sqrt(2)},{1/sqrt(2),-1/sqrt(2)}};
@@ -122,10 +141,8 @@ void quantumH(int first){ //какаято муть с first для 0 кубит
     }
 }
 
-void quantumZ(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд проверял пока только для кубита 1 по питону
-    
-    first--; //!!!!!!!! TODO TODO
-    
+void quantumZ(int first){
+    first--;
     int len = log2(size);
     if(first<0) first = len-1;
     int z[2][2] = {{1,0},{0,-1}};
@@ -153,10 +170,8 @@ void quantumZ(int first){ //какаято муть с first для 0 кубит
     }
 }
 
-void quantumY(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд проверял пока только для кубита 1 по питону
-    
-    first--; //!!!!!!!! TODO TODO
-    
+void quantumY(int first){
+    first--;
     int len = log2(size);
     if(first<0) first = len-1;
     complex<double> y[2][2] = {{complex<double>(0,0),complex<double>(0,-1)},{complex<double>(0,1),complex<double>(0,0)}};
@@ -184,10 +199,8 @@ void quantumY(int first){ //какаято муть с first для 0 кубит
     }
 }
 
-void quantumX(int first){ //какаято муть с first для 0 кубита -1 для 1 - 0 итд проверял пока только для кубита 1 по питону
-    
-    first--; //!!!!!!!! TODO TODO
-    
+void quantumX(int first){
+    first--;
     int len = log2(size);
     if(first<0) first = len-1;
     int x[2][2] = {{0,1},{1,0}};
@@ -234,6 +247,7 @@ vector<string> split(const string &s, char delim) {
     }
     return elems;
 }
+
 void setUpData(Config config){
     string Text;
     ifstream input(config.get_dataPath()); // str path
@@ -250,7 +264,6 @@ void setUpData(Config config){
         for(auto e: elems){
             if(ind==0) real = stod(e); else im = stod(e);
             ind++;
-            //cout << e << endl;
         }
         arr[i]=complex<double>(real, im);
     }
@@ -264,19 +277,12 @@ string decToBin(int x, int len){ //bitset требует константу в �
         x /= 2;
     }
     return result;
-} 
-int binToDec(string b){ //эффективнее найти
-    /*int pow = 1;
-    int res = 0;
-    int len = b.length()-1;
-    for(int i = len; i>=0; i--){
-        //cout << ((int)b[i]-'0')*pow << endl;
-        res += ((int)b[i]-'0')*pow;
-        pow *=2;
-    }
-    return res;*/
+}
+
+int binToDec(string b){
     return stoi(b, nullptr, 2);
 }
+
 Config readConfig(){
     string Text;
     Config cfg;
@@ -313,6 +319,7 @@ void doInstructions(Config config){
     for(int i = 0; i<size; i++){
         getline (input, Text);
         vector<string> elems = split(Text, ' ');
+        //почему split встроенного нет?
         int ind = 0;
         string instruction = "";
         int arg1 = -10;
@@ -323,21 +330,18 @@ void doInstructions(Config config){
             if(ind==2) arg2 = stoi(e);
             ind++;
         }
-        //отсутсвие switch для string - маразм
+        //почему switch не работает со string?
         if (instruction=="X") quantumX(arg1);
         if (instruction=="Y") quantumY(arg1);
         if (instruction=="Z") quantumZ(arg1);
         if (instruction=="H") quantumH(arg1);
         if (instruction=="WH") quantumWalsh();
         if (instruction=="CN") quantumCNot(arg1, arg2);
+        if (instruction=="S") quantumS(arg1);
         applyResult();
-        
-        //out << Text << endl;
     }
     createResultFile(config);
     delete arr;
-
-
     input.close();
 }
 

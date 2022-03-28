@@ -1,0 +1,60 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "04af1950e8a0e7842afc382ee195b6b0e295845f888c627362b2c1388aecca40"
+    }
+  ],
+  "containerPath" : "/Users/nocrail/GitHub/QuantumEmu/QuantumEmu.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx11.3",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/nocrail/GitHub/QuantumEmu/QuantumEmu/QuantumEmu/Index/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/nocrail/GitHub/QuantumEmu/QuantumEmu/QuantumEmu/Index/Build/Products",
+      "derivedDataPath" : "/Users/nocrail/GitHub/QuantumEmu/QuantumEmu",
+      "indexDataStoreFolderPath" : "/Users/nocrail/GitHub/QuantumEmu/QuantumEmu/QuantumEmu/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/nocrail/GitHub/QuantumEmu/QuantumEmu/QuantumEmu/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/nocrail/GitHub/QuantumEmu/QuantumEmu/QuantumEmu/Index/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ARENA_INFO_REGULAR_BUILD_PRODUCTS_DIR" : "/Users/nocrail/GitHub/QuantumEmu/QuantumEmu/QuantumEmu/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
